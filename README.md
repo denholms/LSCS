@@ -51,11 +51,10 @@ In accordance with the requirements specification, the Land Surveyor Checklist S
 
 Land Surveyors have the ability to login, logout and view the checklists in the system. They are unable to create new checklists, delete checklists, or to edit anything beyond checklist item status'. When a Land Surveyor accesses the edit view, the metadata of the checklist is removed from the user interface, and only the embedded map, weather frame, and checklist items are presented.
 
-## Survey Manager
+## Survey Manager & Administrator
 
-Survey Managers have the next level of system access. After logging in and being re-routed to the main page, Managers will be presented with an additional link to construct new checklists. The create view is a form page that allows the Manager to enter all the necessary metadata, from a file number to the survey location coordinates. Unlike the Land Surveyor's experience, this page is very similar to the Manager's edit page. When the Manager decides to edit a checklist, he is returned to the form page with all previously linked data filled in, including the active status of each checklist item. Any changes saved will be automatically updated for all the other users viewing the checklist. Lastly, Survey Managers have the ability to delete checklists. Doing so will once again result in a system wide refresh for all useres viewing the effected checklist.
+Survey Managers have the next level of system access. After logging in and being re-routed to the main page, managers will be presented with an additional link to construct new checklists. The create view is a form page that allows the manager to enter all the necessary metadata, from a file number to survey location coordinates. Unlike the Land Surveyor's experience, this page is very similar to the Manager's edit page. When the Manager decides to edit a checklist, he is returned to the form page with all previously linked data filled in, including the active status of each checklist item. Any changes saved will be automatically updated for all the other users viewing the checklist. Lastly, Survey Managers have the ability to delete checklists. Doing so will once again result in a system wide refresh for all useres viewing the effected checklist.
 
+The Administrator has the additional ability to create users. If the authenticated account has this status, an additional navigation bar dropdown, located in the top-right page header, allows the user to submit an HTML form to the SQL server and create a new account. It does so by conducting a RESTFul POST to a controller route within the LSCS.Web application. 
 
-## Administrator
-
-Administrates 4 life.
+The capabilities of both the Survey Manager and Administrator are currently being handled by the same role. Doing so made it more beneficial for the purposes of a demo, but new roles can be added in a matter of seconds.
