@@ -7,8 +7,6 @@ In order for the project to function within a development environment, both the 
 
 All subsystems are functional and capable of dynamic communication and operations. Users can register new accounts, login, logout, assign managerial or surveyor roles, create checklists, edit checklists, remove checklists, and view checklists with live map and weather feeds for the relevant survey coordinates.
 
-We were unable to meet our goals for API authentication or full support for account management, such as account recovery and modifications.
-
 # Components
 
 As stated above there are 4 main projects within the LSCS solution:
