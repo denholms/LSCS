@@ -1,5 +1,5 @@
 # LSCS
-####2015 SENG 422 project.
+####Summer 2015 - SENG 422 Project.
 
 The Land Surveyor Checklist System is a CRUD web application implemented using C# and ASP.NET MVC and WebAPI 2.0. It contains four main projects and four corresponding test projects (in a separate 'Tests' folder). The projects correspond to the system topology outlined in section 2.0 of our architectural design report.
 
